@@ -11,7 +11,8 @@ This repository is an English, practical awesome list for the FPGA ecosystem. Ke
 - Valid statuses are `active`, `stable`, `unknown`, and `legacy`.
 - Sort rows in each resource table by status in this order: active, stable, unknown, legacy.
 - Within the same status, sort by newest source-confirmed `Activity`, then GitHub stars descending, then resource name.
-- Keep the `Source audit` section as a table with these columns: `Source`, `Scope`, `Action`, `Status`, `Activity`, `Stars`, `Audit result`.
+- Place the `Source audit` section after all resource-list sections and before `Contributing`.
+- Keep the `Source audit` section as a table with these columns: `Source`, `Use it for`, `Action`, `Status`, `Activity`, `Stars`.
 - Valid source audit actions are `use_as_seed`, `manual_review`, and `monitor_only`.
 
 ## Activity and stars

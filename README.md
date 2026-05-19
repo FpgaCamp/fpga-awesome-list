@@ -9,7 +9,6 @@ This list is optimized for application value: learning, RTL design, verification
 - [Start here](#start-here)
 - [Activity and status](#activity-and-status)
 - [Curation rules](#curation-rules)
-- [Source audit](#source-audit)
 - [Learning paths](#learning-paths)
 - [Knowledge and tutorials](#knowledge-and-tutorials)
 - [Books and evergreen references](#books-and-evergreen-references)
@@ -23,6 +22,7 @@ This list is optimized for application value: learning, RTL design, verification
 - [Communities and source lists](#communities-and-source-lists)
 - [FPGA vendors](#fpga-vendors)
 - [eFPGA vendors](#efpga-vendors)
+- [Source audit](#source-audit)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -58,44 +58,6 @@ This list is optimized for application value: learning, RTL design, verification
 - Keep descriptions short and decision-oriented.
 - Avoid generic YouTube/search pages, personal contact noise, duplicate vendor landing pages, unsourced vendor names, and entries with unclear FPGA relevance.
 - Keep old resources only when they still solve a recognizable problem or explain useful legacy context.
-
-## Source audit
-
-| Source | Scope | Action | Status | Activity | Stars | Audit result |
-| --- | --- | --- | --- | --- | --- | --- |
-| [FPGA-ASIC-Roadmap](https://github.com/m3y54m/FPGA-ASIC-Roadmap) | FPGA/ASIC learning roadmap. | manual_review | ![active][status-active] | 2026-05 | 591 | Useful education map; add only focused learning entries. |
-| [hdl/awesome](https://github.com/hdl/awesome) | HDL design, verification, tools, IP, libraries. | use_as_seed | ![active][status-active] | 2026-05 | 173 | Strong HDL/verification source; used for modern tool and framework discovery. |
-| [drom/awesome-hdl](https://github.com/drom/awesome-hdl) | HDL languages, simulators, transpilers, meta-HDL. | use_as_seed | ![active][status-active] | 2026-04 | 1149 | Good HDL language map; dedupe against hdl/awesome before adding. |
-| [awesome-latticeFPGAs](https://github.com/kelu124/awesome-latticeFPGAs) | Lattice FPGA boards for open tools. | use_as_seed | ![active][status-active] | 2026-04 | 354 | Required for boards and open-tool Lattice discovery. |
-| [suryakantamangaraj/awesome-riscv](https://github.com/suryakantamangaraj/awesome-riscv) | RISC-V cores, SoCs, FPGA targets. | manual_review | ![active][status-active] | 2026-04 | 351 | Use only for reusable soft CPU/RISC-V references. |
-| [RDSik/FPGA-Awesome-list](https://github.com/RDSik/FPGA-Awesome-list) | Russian/English FPGA materials. | manual_review | ![active][status-active] | 2026-04 | 10 | Useful regional list; add only English-usable or broadly useful resources. |
-| [aolofsson/awesome-opensource-hardware](https://github.com/aolofsson/awesome-opensource-hardware) | Open-source hardware tools and reusable designs. | use_as_seed | ![active][status-active] | 2026-03 | 2338 | High-signal open-source EDA/tooling source. |
-| [awesome-formal-verification](https://github.com/ElNiak/awesome-formal-verification) | Formal verification across software and hardware. | monitor_only | ![active][status-active] | 2026-03 | 134 | Broad formal list; use only for hardware-specific formal resources. |
-| [Awesome-EDA](https://github.com/ishandutta2007/Awesome-EDA) | EDA tools across PCB, FPGA, ASIC, VLSI. | manual_review | ![active][status-active] | 2026-02 | 7 | Secondary EDA source; requires manual filtering. |
-| [kitspace/awesome-electronics](https://github.com/kitspace/awesome-electronics) | General electronics resource index. | monitor_only | ![active][status-active] | 2026-01 | 7695 | High-popularity but broad; use only for cross-list discovery. |
-| [ben-marshall/awesome-open-hardware-verification](https://github.com/ben-marshall/awesome-open-hardware-verification) | Open hardware verification. | use_as_seed | ![active][status-active] | 2026-01 | 607 | Strong verification source for cocotb, formal, and testbench tooling. |
-| [FPGA-Systems/fpga-awesome-list](https://github.com/FPGA-Systems/fpga-awesome-list) | General FPGA list. | use_as_seed | ![active][status-active] | 2025-10 | 180 | Baseline seed; cleaned up contact noise, generic links, and stale entries. |
-| [C8Costa/Edge-Ai-Resources](https://github.com/C8Costa/Edge-Ai-Resources) | Edge AI and hardware acceleration. | monitor_only | ![active][status-active] | 2025-08 | 2 | Too broad for the main list; FPGA relevance is secondary. |
-| [lpacher/fphd](https://github.com/lpacher/fphd) | FPGA programming course using Vivado and VHDL. | manual_review | ![active][status-active] | 2025-07 | 21 | Useful VHDL/Vivado learning material; added as an education resource. |
-| [TM90/awesome-hwd-tools](https://github.com/TM90/awesome-hwd-tools) | Hardware design tools. | monitor_only | ![active][status-active] | 2025-06 | 88 | Secondary tooling source; stronger lists cover most overlap. |
-| [coderonion/awesome-fpga](https://github.com/coderonion/awesome-fpga) | Broad FPGA, HDL, tools, IP, and source-list discovery. | use_as_seed | ![stable][status-stable] | 2024-07 | 4 | Useful but noisy; selected maintained English-usable resources only. |
-| [suryavanshi/awesome-hardware](https://github.com/suryavanshi/awesome-hardware) | Generic hardware resources. | monitor_only | ![stable][status-stable] | 2024-06 | 1 | Weak FPGA signal; use only as a secondary search trail. |
-| [hdl/awesome tools category](https://hdl.github.io/awesome/categories/tools/) | Generated HDL/EDA tools category. | use_as_seed | ![stable][status-stable] |  |  | Useful generated view; use hdl/awesome GitHub metadata for project activity. |
-| [awesome.ecosyste.ms FPGA topic](https://awesome.ecosyste.ms/lists?topic=fpga) | Index of FPGA-related awesome lists. | monitor_only | ![unknown][status-unknown] |  |  | Discovery index only; not a source of activity metadata for individual resources. |
-| [AwesomeOpenSource: sjinzh awesome-fpga-list](https://awesomeopensource.com/project/sjinzh/awesome-fpga-list) | AwesomeOpenSource mirror page. | monitor_only | ![unknown][status-unknown] |  |  | Cloudflare-gated during audit; the GitHub slug currently redirects to an unrelated CUDA/HPC repo, so it is not used as an FPGA source. |
-| [awesome-opensource-asic-resources](https://github.com/mattvenn/awesome-opensource-asic-resources) | Open-source ASIC resources. | monitor_only | ![legacy][status-legacy] | 2023-04 | 395 | ASIC-centric; use only for OSS CAD Suite/open-silicon overlap. |
-| [drom/awesome-riscv](https://github.com/drom/awesome-riscv) | RISC-V implementations. | monitor_only | ![legacy][status-legacy] | 2023-03 | 143 | Compact soft CPU source, but less current than alternatives. |
-| [open-source-fpga-resource](https://github.com/os-fpga/open-source-fpga-resource) | Open-source FPGA projects. | use_as_seed | ![legacy][status-legacy] | 2022-11 | 455 | Useful OSFPGA/open-tool index, but stale; keep as legacy source list. |
-| [Hands-on-FPGA-class](https://github.com/tinyvision-ai-inc/Hands-on-FPGA-class) | Hands-on FPGA class. | manual_review | ![legacy][status-legacy] | 2022-09 | 58 | Good beginner angle, but stale; add only durable exercises. |
-| [awesome-fpga-programming](https://github.com/emanueledelsozzo/awesome-fpga-programming) | FPGA programming languages and DSLs. | use_as_seed | ![legacy][status-legacy] | 2022-06 | 74 | Useful for HLS/DSL discovery, but stale; keep as legacy source list. |
-| [awesome-digital-ic](https://github.com/qninth/awesome-digital-ic) | Digital IC, ASIC, FPGA resources. | manual_review | ![legacy][status-legacy] | 2022-05 | 154 | Mixed Chinese/English source; requires strict filtering. |
-| [awesome-hardware-tools](https://github.com/jpc-lip6/awesome-hardware-tools) | Open-source hardware tools. | use_as_seed | ![legacy][status-legacy] | 2022-04 | 0 | Secondary tooling source; included in audit but not main list due low signal. |
-| [awesome-dv](https://github.com/troyguo/awesome-dv) | ASIC design verification. | monitor_only | ![legacy][status-legacy] | 2022-02 | 357 | Verification-adjacent; use only for FPGA-relevant verification resources. |
-| [Awesome-FPGA-ASIC-RISC-V](https://github.com/TouchSky-Lab/Awesome-FPGA-ASIC-RISC-V) | FPGA/ASIC/RISC-V papers. | monitor_only | ![legacy][status-legacy] | 2022-02 | 6 | Weak curation; not used as a seed. |
-| [awesome-fpga-boards](https://github.com/iDoka/awesome-fpga-boards) | Repurposed FPGA boards. | manual_review | ![legacy][status-legacy] | 2021-01 | 104 | Niche board list; kept as a legacy board resource. |
-| [VHDL/awesome-vhdl](https://github.com/VHDL/awesome-vhdl) | VHDL IP, frameworks, tools, resources. | manual_review | ![legacy][status-legacy] | 2020-02 | 85 | Archived; useful for older VHDL references only. |
-| [clin99/awesome-eda](https://github.com/clin99/awesome-eda) | Year-indexed open-source EDA projects. | monitor_only | ![legacy][status-legacy] | 2019-06 | 99 | Historical index, not an active source list. |
-| [Vitorian/awesome-fpga](https://github.com/Vitorian/awesome-fpga) | General FPGA tutorials and references. | manual_review | ![legacy][status-legacy] | 2017-05 | 389 | Historical source; retained only durable references and legacy tools. |
 
 ## Learning paths
 
@@ -341,6 +303,44 @@ This list is optimized for application value: learning, RTL design, verification
 | [AdicSys](https://www.adicsys.com/) | Embedded FPGA IP. | ![stable][status-stable] |  |  |
 | [Menta](https://www.menta-efpga.com/) | Embedded FPGA IP. | ![stable][status-stable] |  |  |
 | [QuickLogic eFPGA IP](https://www.quicklogic.com/efpga-ip/) | Embedded FPGA hard IP and tools. | ![stable][status-stable] |  |  |
+
+## Source audit
+
+| Source | Use it for | Action | Status | Activity | Stars |
+| --- | --- | --- | --- | --- | --- |
+| [FPGA-ASIC-Roadmap](https://github.com/m3y54m/FPGA-ASIC-Roadmap) | FPGA/ASIC learning roadmap; useful education map, but add only focused learning entries. | manual_review | ![active][status-active] | 2026-05 | 591 |
+| [hdl/awesome](https://github.com/hdl/awesome) | HDL design, verification, tools, IP, and libraries; strong source for modern tool and framework discovery. | use_as_seed | ![active][status-active] | 2026-05 | 173 |
+| [drom/awesome-hdl](https://github.com/drom/awesome-hdl) | HDL languages, simulators, transpilers, and meta-HDL; dedupe against hdl/awesome before adding. | use_as_seed | ![active][status-active] | 2026-04 | 1149 |
+| [awesome-latticeFPGAs](https://github.com/kelu124/awesome-latticeFPGAs) | Lattice FPGA boards for open tools; required source for board and open-tool Lattice discovery. | use_as_seed | ![active][status-active] | 2026-04 | 354 |
+| [suryakantamangaraj/awesome-riscv](https://github.com/suryakantamangaraj/awesome-riscv) | RISC-V cores, SoCs, and FPGA targets; use only for reusable soft CPU/RISC-V references. | manual_review | ![active][status-active] | 2026-04 | 351 |
+| [RDSik/FPGA-Awesome-list](https://github.com/RDSik/FPGA-Awesome-list) | Russian/English FPGA materials; add only English-usable or broadly useful resources. | manual_review | ![active][status-active] | 2026-04 | 10 |
+| [aolofsson/awesome-opensource-hardware](https://github.com/aolofsson/awesome-opensource-hardware) | Open-source hardware tools and reusable designs; high-signal open-source EDA/tooling source. | use_as_seed | ![active][status-active] | 2026-03 | 2338 |
+| [awesome-formal-verification](https://github.com/ElNiak/awesome-formal-verification) | Formal verification across software and hardware; use only for hardware-specific formal resources. | monitor_only | ![active][status-active] | 2026-03 | 134 |
+| [Awesome-EDA](https://github.com/ishandutta2007/Awesome-EDA) | EDA tools across PCB, FPGA, ASIC, and VLSI; secondary source that requires manual filtering. | manual_review | ![active][status-active] | 2026-02 | 7 |
+| [kitspace/awesome-electronics](https://github.com/kitspace/awesome-electronics) | General electronics resource index; use only for cross-list discovery. | monitor_only | ![active][status-active] | 2026-01 | 7695 |
+| [ben-marshall/awesome-open-hardware-verification](https://github.com/ben-marshall/awesome-open-hardware-verification) | Open hardware verification; strong source for cocotb, formal, and testbench tooling. | use_as_seed | ![active][status-active] | 2026-01 | 607 |
+| [FPGA-Systems/fpga-awesome-list](https://github.com/FPGA-Systems/fpga-awesome-list) | General FPGA list used as the baseline seed; clean contact noise, generic links, and stale entries before reuse. | use_as_seed | ![active][status-active] | 2025-10 | 180 |
+| [C8Costa/Edge-Ai-Resources](https://github.com/C8Costa/Edge-Ai-Resources) | Edge AI and hardware acceleration; too broad for the main list because FPGA relevance is secondary. | monitor_only | ![active][status-active] | 2025-08 | 2 |
+| [lpacher/fphd](https://github.com/lpacher/fphd) | FPGA programming course using Vivado and VHDL; useful VHDL/Vivado education resource. | manual_review | ![active][status-active] | 2025-07 | 21 |
+| [TM90/awesome-hwd-tools](https://github.com/TM90/awesome-hwd-tools) | Hardware design tools; secondary tooling source mostly covered by stronger lists. | monitor_only | ![active][status-active] | 2025-06 | 88 |
+| [coderonion/awesome-fpga](https://github.com/coderonion/awesome-fpga) | Broad FPGA, HDL, tools, IP, and source-list discovery; useful but noisy, so select maintained English-usable resources only. | use_as_seed | ![stable][status-stable] | 2024-07 | 4 |
+| [suryavanshi/awesome-hardware](https://github.com/suryavanshi/awesome-hardware) | Generic hardware resources; weak FPGA signal, useful only as a secondary search trail. | monitor_only | ![stable][status-stable] | 2024-06 | 1 |
+| [hdl/awesome tools category](https://hdl.github.io/awesome/categories/tools/) | Generated HDL/EDA tools category; use hdl/awesome GitHub metadata for project activity. | use_as_seed | ![stable][status-stable] |  |  |
+| [awesome.ecosyste.ms FPGA topic](https://awesome.ecosyste.ms/lists?topic=fpga) | FPGA-related awesome-list discovery index; not a source of activity metadata for individual resources. | monitor_only | ![unknown][status-unknown] |  |  |
+| [AwesomeOpenSource: sjinzh awesome-fpga-list](https://awesomeopensource.com/project/sjinzh/awesome-fpga-list) | AwesomeOpenSource mirror page; Cloudflare-gated during audit and GitHub slug redirects to an unrelated CUDA/HPC repo. | monitor_only | ![unknown][status-unknown] |  |  |
+| [awesome-opensource-asic-resources](https://github.com/mattvenn/awesome-opensource-asic-resources) | Open-source ASIC resources; use only for OSS CAD Suite/open-silicon overlap. | monitor_only | ![legacy][status-legacy] | 2023-04 | 395 |
+| [drom/awesome-riscv](https://github.com/drom/awesome-riscv) | RISC-V implementations; compact soft CPU source, but less current than alternatives. | monitor_only | ![legacy][status-legacy] | 2023-03 | 143 |
+| [open-source-fpga-resource](https://github.com/os-fpga/open-source-fpga-resource) | Open-source FPGA projects; useful OSFPGA/open-tool index, but stale. | use_as_seed | ![legacy][status-legacy] | 2022-11 | 455 |
+| [Hands-on-FPGA-class](https://github.com/tinyvision-ai-inc/Hands-on-FPGA-class) | Hands-on FPGA class; good beginner angle, but add only durable exercises. | manual_review | ![legacy][status-legacy] | 2022-09 | 58 |
+| [awesome-fpga-programming](https://github.com/emanueledelsozzo/awesome-fpga-programming) | FPGA programming languages and DSLs; useful for HLS/DSL discovery, but stale. | use_as_seed | ![legacy][status-legacy] | 2022-06 | 74 |
+| [awesome-digital-ic](https://github.com/qninth/awesome-digital-ic) | Digital IC, ASIC, and FPGA resources; mixed Chinese/English source that requires strict filtering. | manual_review | ![legacy][status-legacy] | 2022-05 | 154 |
+| [awesome-hardware-tools](https://github.com/jpc-lip6/awesome-hardware-tools) | Open-source hardware tools; secondary tooling source included in audit but not main list due low signal. | use_as_seed | ![legacy][status-legacy] | 2022-04 | 0 |
+| [awesome-dv](https://github.com/troyguo/awesome-dv) | ASIC design verification; use only for FPGA-relevant verification resources. | monitor_only | ![legacy][status-legacy] | 2022-02 | 357 |
+| [Awesome-FPGA-ASIC-RISC-V](https://github.com/TouchSky-Lab/Awesome-FPGA-ASIC-RISC-V) | FPGA/ASIC/RISC-V papers; weak curation, not used as a seed. | monitor_only | ![legacy][status-legacy] | 2022-02 | 6 |
+| [awesome-fpga-boards](https://github.com/iDoka/awesome-fpga-boards) | Repurposed FPGA boards; niche board list kept as a legacy board resource. | manual_review | ![legacy][status-legacy] | 2021-01 | 104 |
+| [VHDL/awesome-vhdl](https://github.com/VHDL/awesome-vhdl) | VHDL IP, frameworks, tools, and resources; archived, useful for older VHDL references only. | manual_review | ![legacy][status-legacy] | 2020-02 | 85 |
+| [clin99/awesome-eda](https://github.com/clin99/awesome-eda) | Year-indexed open-source EDA projects; historical index, not an active source list. | monitor_only | ![legacy][status-legacy] | 2019-06 | 99 |
+| [Vitorian/awesome-fpga](https://github.com/Vitorian/awesome-fpga) | General FPGA tutorials and references; historical source for durable references and legacy tools. | manual_review | ![legacy][status-legacy] | 2017-05 | 389 |
 
 ## Contributing
 
