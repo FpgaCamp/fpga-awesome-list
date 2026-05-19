@@ -211,6 +211,7 @@ For GitHub resources, the activity date is the latest observed push date where a
 - [Electronics Stack Exchange: FPGA](https://electronics.stackexchange.com/questions/tagged/fpga) - Hardware-focused FPGA questions. Activity: 2026-05-19, stable.
 - [Stack Overflow: FPGA](https://stackoverflow.com/questions/tagged/fpga) - Software/tooling-oriented FPGA questions. Activity: 2026-05-19, stable.
 - [FPGA Systems list](https://github.com/FPGA-Systems/fpga-awesome-list) - Original community list used as a baseline for this curated English version. Activity: 2026-05-19, stable.
+- [hdl/awesome](https://github.com/hdl/awesome) - Curated HDL design and verification source list used for tool discovery. Activity: 2026-05-15, active.
 - [Awesome HDL tools](https://hdl.github.io/awesome/categories/tools/) - Source list for HDL/EDA tool discovery. Activity: 2026-05-15, active.
 - [Vitorian awesome-fpga](https://github.com/Vitorian/awesome-fpga) - Older FPGA resource list used for durable legacy references. Activity: 2017-05-25, legacy.
 
