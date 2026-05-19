@@ -2,7 +2,7 @@
 
 A curated, practical list of FPGA resources for engineers, students, and teams building real FPGA projects.
 
-This list is optimized for application value: learning, RTL design, verification, toolchains, boards, reusable IP, communities, and vendors. It is intentionally selective; generic search links, unclear mirrors, abandoned placeholders, and vendor names without useful public FPGA entry points are kept out.
+This list is optimized for application value: learning, RTL design, verification, toolchains, boards, reusable IP, communities, and vendors. It is intentionally selective; generic search links, unclear mirrors, abandoned stubs, and vendor names without useful public FPGA entry points are kept out.
 
 ## Contents
 
@@ -38,10 +38,12 @@ This list is optimized for application value: learning, RTL design, verification
 
 ## Activity legend
 
-- `active` - public project activity or source update within the last 18 months.
-- `stable` - evergreen, authoritative, or vendor-maintained resource with no better public activity signal.
-- `legacy` - useful for older flows, old devices, or historical context; not a first choice for new projects.
-- `unknown` - reachable and relevant, but public update activity is not clear.
+| Status | Meaning |
+| --- | --- |
+| `active` | Public project activity or source update within the last 18 months. |
+| `stable` | Evergreen, authoritative, or vendor-maintained resource with no better public activity signal. |
+| `legacy` | Useful for older flows, old devices, or historical context; not a first choice for new projects. |
+| `unknown` | Reachable and relevant, but public update activity is not clear. |
 
 For GitHub resources, the activity date is the latest observed push date where available. For regular websites, vendor pages, books, and tutorials without public version metadata, the date is the last manual check: `2026-05-19`.
 
@@ -56,185 +58,221 @@ For GitHub resources, the activity date is the latest observed push date where a
 
 ### Beginner path
 
-- [HDLBits](https://hdlbits.01xz.net/wiki/Main_Page) - Hands-on Verilog exercises for syntax, FSMs, timing, and small digital blocks. Activity: 2026-05-19, stable.
-- [Nandland](https://www.youtube.com/@nandland) - Beginner-friendly HDL and FPGA videos. Activity: 2026-05-19, stable.
-- [Project F](https://projectf.io/) - Concise FPGA tutorials with graphics, timing, and small design examples. Activity: 2026-05-19, stable.
-- [fpga4fun](https://www.fpga4fun.com/) - Small projects useful for first board experiments. Activity: 2026-05-19, stable.
-- [FPGA Tutorial](https://www.fpgatutorial.com/) - Structured introductory material for HDL and FPGA fundamentals. Activity: 2026-05-19, stable.
-- [SparkFun FPGA guide](https://www.sparkfun.com/fpga) - Beginner-oriented explanation of FPGA tradeoffs and first steps. Activity: 2026-05-19, stable.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [HDLBits](https://hdlbits.01xz.net/wiki/Main_Page) | Hands-on Verilog exercises for syntax, FSMs, timing, and small blocks. | `stable` | 2026-05-19 |
+| [Nandland](https://www.youtube.com/@nandland) | Beginner-friendly HDL and FPGA videos. | `stable` | 2026-05-19 |
+| [Project F](https://projectf.io/) | Concise FPGA tutorials with graphics, timing, and small examples. | `stable` | 2026-05-19 |
+| [fpga4fun](https://www.fpga4fun.com/) | Small projects for first board experiments. | `stable` | 2026-05-19 |
+| [FPGA Tutorial](https://www.fpgatutorial.com/) | Structured HDL and FPGA fundamentals. | `stable` | 2026-05-19 |
+| [SparkFun FPGA guide](https://www.sparkfun.com/fpga) | Beginner-oriented FPGA tradeoffs and first steps. | `stable` | 2026-05-19 |
 
 ### RTL design path
 
-- [01signal](https://www.01signal.com/) - Practical notes on timing, CDC, reset strategy, constraints, and FPGA design pitfalls. Activity: 2026-05-19, stable.
-- [ZipCPU](https://zipcpu.com/) - Deep RTL articles, formal methods, bus design, and CPU-oriented FPGA projects. Activity: 2025-12-08, active.
-- [Sunburst Design](http://www.sunburst-design.com/) - Classic Verilog/SystemVerilog papers and design methodology material. Activity: 2026-05-19, stable.
-- [ASIC-World](https://www.asic-world.com/) - Verilog/SystemVerilog reference material. Activity: 2026-05-19, stable.
-- [ChipVerify](https://www.chipverify.com/) - Practical examples for Verilog, SystemVerilog, and verification concepts. Activity: 2026-05-19, stable.
-- [Bruno Levy learn-fpga](https://github.com/BrunoLevy/learn-fpga) - Low-cost FPGA, Yosys, nextpnr, and RISC-V learning material. Activity: 2025-11-18, active.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [01signal](https://www.01signal.com/) | Timing, CDC, resets, constraints, and design pitfalls. | `stable` | 2026-05-19 |
+| [ZipCPU](https://zipcpu.com/) | Deep RTL, formal methods, buses, and CPU-oriented FPGA projects. | `active` | 2025-12-08 |
+| [Sunburst Design](http://www.sunburst-design.com/) | Classic Verilog/SystemVerilog papers and methodology material. | `stable` | 2026-05-19 |
+| [ASIC-World](https://www.asic-world.com/) | Verilog and SystemVerilog reference material. | `stable` | 2026-05-19 |
+| [ChipVerify](https://www.chipverify.com/) | Verilog, SystemVerilog, and verification examples. | `stable` | 2026-05-19 |
+| [Bruno Levy learn-fpga](https://github.com/BrunoLevy/learn-fpga) | Low-cost FPGA, Yosys, nextpnr, and RISC-V learning. | `active` | 2025-11-18 |
 
 ### Verification path
 
-- [EDA Playground](https://www.edaplayground.com/) - Browser-based HDL simulation and quick testbench experiments. Activity: 2026-05-19, stable.
-- [cocotb](https://docs.cocotb.org/) - Python-based cosimulation for HDL verification. Activity: 2026-05-18, active.
-- [VUnit](https://github.com/VUnit/vunit) - VHDL/SystemVerilog test automation framework. Activity: 2026-05-14, active.
-- [OSVVM](https://github.com/OSVVM/OsvvmLibraries) - VHDL verification methodology and reusable verification libraries. Activity: 2026-05-16, active.
-- [UVVM](https://github.com/UVVM/UVVM) - VHDL verification framework with BFMs and structured testbench patterns. Activity: 2026-04-22, active.
-- [GTKWave](http://gtkwave.sourceforge.net/) - Waveform viewer for day-to-day simulation debug. Activity: 2026-04-21, active.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [EDA Playground](https://www.edaplayground.com/) | Browser-based HDL simulation and quick testbench experiments. | `stable` | 2026-05-19 |
+| [cocotb](https://docs.cocotb.org/) | Python-based cosimulation for HDL verification. | `active` | 2026-05-18 |
+| [VUnit](https://github.com/VUnit/vunit) | VHDL/SystemVerilog test automation. | `active` | 2026-05-14 |
+| [OSVVM](https://github.com/OSVVM/OsvvmLibraries) | VHDL methodology and reusable verification libraries. | `active` | 2026-05-16 |
+| [UVVM](https://github.com/UVVM/UVVM) | VHDL BFMs and structured testbench patterns. | `active` | 2026-04-22 |
+| [GTKWave](http://gtkwave.sourceforge.net/) | Waveform viewing for day-to-day simulation debug. | `active` | 2026-04-21 |
 
 ### Open-source FPGA flow path
 
-- [Yosys](https://yosyshq.net/yosys/) - Open-source HDL synthesis. Activity: 2026-05-19, stable.
-- [nextpnr](https://github.com/YosysHQ/nextpnr) - Open-source place-and-route for supported FPGA families. Activity: 2026-05-15, active.
-- [Project IceStorm](http://www.clifford.at/icestorm/) - Open toolchain resources for Lattice iCE40. Activity: 2026-05-19, stable.
-- [prjtrellis](https://github.com/YosysHQ/prjtrellis) - Lattice ECP5 bitstream and flow support. Activity: 2026-05-09, active.
-- [F4PGA](https://f4pga.org/) - Umbrella project for open FPGA flows, formerly SymbiFlow. Activity: 2025-01-06, active.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [Yosys](https://yosyshq.net/yosys/) | Open-source HDL synthesis. | `stable` | 2026-05-19 |
+| [nextpnr](https://github.com/YosysHQ/nextpnr) | Open-source place-and-route for supported FPGA families. | `active` | 2026-05-15 |
+| [Project IceStorm](http://www.clifford.at/icestorm/) | Open toolchain resources for Lattice iCE40. | `stable` | 2026-05-19 |
+| [prjtrellis](https://github.com/YosysHQ/prjtrellis) | Lattice ECP5 bitstream and flow support. | `active` | 2026-05-09 |
+| [F4PGA](https://f4pga.org/) | Open FPGA flow umbrella, formerly SymbiFlow. | `active` | 2025-01-06 |
 
 ## Knowledge and tutorials
 
-- [VHDLwhiz](https://vhdlwhiz.com/) - VHDL-focused tutorials and courses. Activity: 2026-05-19, stable.
-- [Beyond Circuits](https://www.beyond-circuits.com/) - FPGA and digital design articles. Activity: 2026-05-19, stable.
-- [Adiuvo Engineering](https://www.adiuvoengineering.com/) - MicroZed Chronicles and FPGA/SoC engineering articles. Activity: 2026-05-19, stable.
-- [ITSEmbedded](https://www.itsembedded.com/) - Practical RTL, Verilator, and scripted simulation workflows. Activity: 2026-05-19, stable.
-- [FPGA4Student](https://fpga4student.com/) - FPGA projects and HDL examples. Activity: 2026-05-19, stable.
-- [Numato Lab Knowledge Base](https://numato.com/kb/) - Board-oriented tutorials and examples. Activity: 2026-05-19, stable.
-- [FPGA Academy](https://fpgacademy.org/) - Educational FPGA material and labs. Activity: 2026-05-19, stable.
-- [Tang Nano Project Series](https://learn.lushaylabs.com/) - Practical Gowin/Tang Nano learning path. Activity: 2026-05-19, stable.
-- [SparkFun "So You Want to Learn FPGAs"](https://news.sparkfun.com/1203) - Older but still useful discussion of the FPGA learning curve. Activity: 2013-08-27, legacy.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [VHDLwhiz](https://vhdlwhiz.com/) | VHDL-focused tutorials and courses. | `stable` | 2026-05-19 |
+| [Beyond Circuits](https://www.beyond-circuits.com/) | FPGA and digital design articles. | `stable` | 2026-05-19 |
+| [Adiuvo Engineering](https://www.adiuvoengineering.com/) | MicroZed Chronicles and FPGA/SoC engineering articles. | `stable` | 2026-05-19 |
+| [ITSEmbedded](https://www.itsembedded.com/) | Practical RTL, Verilator, and scripted simulation workflows. | `stable` | 2026-05-19 |
+| [FPGA4Student](https://fpga4student.com/) | FPGA projects and HDL examples. | `stable` | 2026-05-19 |
+| [Numato Lab Knowledge Base](https://numato.com/kb/) | Board-oriented tutorials and examples. | `stable` | 2026-05-19 |
+| [FPGA Academy](https://fpgacademy.org/) | Educational FPGA material and labs. | `stable` | 2026-05-19 |
+| [Tang Nano Project Series](https://learn.lushaylabs.com/) | Practical Gowin/Tang Nano learning path. | `stable` | 2026-05-19 |
+| [SparkFun "So You Want to Learn FPGAs"](https://news.sparkfun.com/1203) | Older but useful discussion of the FPGA learning curve. | `legacy` | 2013-08-27 |
 
 ## Books and evergreen references
 
-- *FPGA Prototyping by Verilog Examples* by Pong P. Chu - Practical Verilog projects for FPGA learning. Activity: 2008, stable.
-- *FPGA Prototyping by VHDL Examples* by Pong P. Chu - Practical VHDL projects for FPGA learning. Activity: 2008, stable.
-- *Verilog by Example* by Blaine C. Readler - Compact Verilog primer with FPGA-oriented examples. Activity: 2011, stable.
-- *100 Power Tips for FPGA Designers* by Evgeni Stavinov - Practical FPGA design tips, scripts, and gotchas. Activity: 2011-06-17, stable.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| *FPGA Prototyping by Verilog Examples* by Pong P. Chu | Practical Verilog projects for FPGA learning. | `stable` | 2008 |
+| *FPGA Prototyping by VHDL Examples* by Pong P. Chu | Practical VHDL projects for FPGA learning. | `stable` | 2008 |
+| *Verilog by Example* by Blaine C. Readler | Compact Verilog primer with FPGA-oriented examples. | `stable` | 2011 |
+| *100 Power Tips for FPGA Designers* by Evgeni Stavinov | Practical FPGA design tips, scripts, and gotchas. | `stable` | 2011-06-17 |
 
 ## Languages and HDL frameworks
 
-- [Verilog/SystemVerilog resources](https://www.chipverify.com/) - Practical language examples and verification-oriented explanations. Activity: 2026-05-19, stable.
-- [VHDL resources](https://vhdlwhiz.com/) - Practical VHDL tutorials and design patterns. Activity: 2026-05-19, stable.
-- [Chisel](https://www.chisel-lang.org/) - Scala-embedded hardware construction language. Activity: 2026-05-19, active.
-- [SpinalHDL](https://spinalhdl.github.io/SpinalDoc-RTD/) - Scala-based hardware description language. Activity: 2026-05-09, active.
-- [Amaranth HDL](https://amaranth-lang.org/) - Python-based HDL for FPGA and ASIC-oriented digital design. Activity: 2026-04-28, active.
-- [PyMTL3](https://github.com/pymtl/pymtl3) - Python framework for hardware generation, simulation, and verification. Activity: 2026-04-05, active.
-- [PyXHDL](https://github.com/davidel/pyxhdl) - Python frontend that generates SystemVerilog and VHDL. Activity: 2026-02-11, active.
-- [FloPoCo](https://flopoco.org/) - Generator for fixed- and floating-point arithmetic cores. Activity: 2026-05-19, stable.
-- [JSON-for-VHDL](https://github.com/Paebbels/JSON-for-VHDL) - Synthesizable VHDL package for JSON parsing and structured generics. Activity: 2023-07-17, stable.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [Verilog/SystemVerilog resources](https://www.chipverify.com/) | Practical language examples and verification explanations. | `stable` | 2026-05-19 |
+| [VHDL resources](https://vhdlwhiz.com/) | Practical VHDL tutorials and design patterns. | `stable` | 2026-05-19 |
+| [Chisel](https://www.chisel-lang.org/) | Scala-embedded hardware construction language. | `active` | 2026-05-19 |
+| [SpinalHDL](https://spinalhdl.github.io/SpinalDoc-RTD/) | Scala-based hardware description language. | `active` | 2026-05-09 |
+| [Amaranth HDL](https://amaranth-lang.org/) | Python-based HDL for FPGA and ASIC-oriented design. | `active` | 2026-04-28 |
+| [PyMTL3](https://github.com/pymtl/pymtl3) | Python hardware generation, simulation, and verification. | `active` | 2026-04-05 |
+| [PyXHDL](https://github.com/davidel/pyxhdl) | Python frontend that generates SystemVerilog and VHDL. | `active` | 2026-02-11 |
+| [FloPoCo](https://flopoco.org/) | Fixed- and floating-point arithmetic core generation. | `stable` | 2026-05-19 |
+| [JSON-for-VHDL](https://github.com/Paebbels/JSON-for-VHDL) | Synthesizable VHDL package for JSON parsing and generics. | `stable` | 2023-07-17 |
 
 ## Simulation, verification, and debug
 
 ### Simulators
 
-- [Icarus Verilog](https://github.com/steveicarus/iverilog) - Free Verilog simulator for quick command-line flows. Activity: 2026-05-17, active.
-- [Verilator](https://verilator.org/) - High-performance SystemVerilog simulator and linting tool. Activity: 2026-05-19, active.
-- [GHDL](https://ghdl.github.io/ghdl/) - Open-source VHDL analyzer, compiler, simulator, and experimental synthesizer. Activity: 2026-05-18, active.
-- [NVC](https://github.com/nickg/nvc) - VHDL compiler and simulator. Activity: 2026-05-18, active.
-- [EDA Playground](https://www.edaplayground.com/) - Online HDL simulation across multiple backends. Activity: 2026-05-19, stable.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [Icarus Verilog](https://github.com/steveicarus/iverilog) | Free Verilog simulator for quick command-line flows. | `active` | 2026-05-17 |
+| [Verilator](https://verilator.org/) | High-performance SystemVerilog simulation and linting. | `active` | 2026-05-19 |
+| [GHDL](https://ghdl.github.io/ghdl/) | Open-source VHDL analysis, compilation, simulation, and synthesis experiments. | `active` | 2026-05-18 |
+| [NVC](https://github.com/nickg/nvc) | VHDL compilation and simulation. | `active` | 2026-05-18 |
+| [EDA Playground](https://www.edaplayground.com/) | Online HDL simulation across multiple backends. | `stable` | 2026-05-19 |
 
 ### Verification frameworks and linting
 
-- [cocotb](https://docs.cocotb.org/) - Python testbenches for HDL designs. Activity: 2026-05-18, active.
-- [VUnit](https://github.com/VUnit/vunit) - Automated test runner and verification framework for VHDL/SystemVerilog. Activity: 2026-05-14, active.
-- [OSVVM](https://github.com/OSVVM/OsvvmLibraries) - VHDL verification methodology, coverage, randomization, and utility libraries. Activity: 2026-05-16, active.
-- [UVVM](https://github.com/UVVM/UVVM) - VHDL verification framework with reusable verification components. Activity: 2026-04-22, active.
-- [Verible](https://chipsalliance.github.io/verible/) - SystemVerilog formatting, linting, parsing, and language tooling. Activity: 2026-03-13, active.
-- [slang](https://github.com/MikePopoloski/slang) - SystemVerilog compiler and language services toolkit. Activity: 2026-05-18, active.
-- [Surelog/UHDM](https://github.com/chipsalliance/Surelog) - SystemVerilog parser and UHDM-based frontend ecosystem. Activity: 2026-05-12, active.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [cocotb](https://docs.cocotb.org/) | Python testbenches for HDL designs. | `active` | 2026-05-18 |
+| [VUnit](https://github.com/VUnit/vunit) | Automated VHDL/SystemVerilog test running. | `active` | 2026-05-14 |
+| [OSVVM](https://github.com/OSVVM/OsvvmLibraries) | VHDL verification, coverage, randomization, and utility libraries. | `active` | 2026-05-16 |
+| [UVVM](https://github.com/UVVM/UVVM) | VHDL verification components and structured tests. | `active` | 2026-04-22 |
+| [Verible](https://chipsalliance.github.io/verible/) | SystemVerilog formatting, linting, parsing, and language tooling. | `active` | 2026-03-13 |
+| [slang](https://github.com/MikePopoloski/slang) | SystemVerilog compiler and language services toolkit. | `active` | 2026-05-18 |
+| [Surelog/UHDM](https://github.com/chipsalliance/Surelog) | SystemVerilog parsing and UHDM frontend ecosystem. | `active` | 2026-05-12 |
 
 ### Debug and diagrams
 
-- [GTKWave](http://gtkwave.sourceforge.net/) - Waveform viewing for VCD/FST traces. Activity: 2026-04-21, active.
-- [WaveDrom](https://wavedrom.com/) - Timing diagrams for documentation and interface reviews. Activity: 2026-05-19, stable.
-- [OpenOCD](https://openocd.org/) - JTAG access and board debug workflows. Activity: 2026-05-17, active.
-- [Sigrok / PulseView](https://sigrok.org/wiki/Main_Page) - Logic analyzer and signal capture tooling. Activity: 2025-11-10, active.
-- [FPGA Error Decoder](https://marketplace.visualstudio.com/items?itemName=fpgachat.fpga-error-decoder) - VS Code extension for faster FPGA build error triage. Activity: 2026-05-19, stable.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [GTKWave](http://gtkwave.sourceforge.net/) | VCD/FST waveform viewing. | `active` | 2026-04-21 |
+| [WaveDrom](https://wavedrom.com/) | Timing diagrams for documentation and interface reviews. | `stable` | 2026-05-19 |
+| [OpenOCD](https://openocd.org/) | JTAG access and board debug workflows. | `active` | 2026-05-17 |
+| [Sigrok / PulseView](https://sigrok.org/wiki/Main_Page) | Logic analyzer and signal capture tooling. | `active` | 2025-11-10 |
+| [FPGA Error Decoder](https://marketplace.visualstudio.com/items?itemName=fpgachat.fpga-error-decoder) | VS Code extension for FPGA build error triage. | `stable` | 2026-05-19 |
 
 ## Synthesis and implementation
 
-- [Yosys](https://yosyshq.net/yosys/) - Synthesis framework used by many open FPGA flows. Activity: 2026-05-19, stable.
-- [nextpnr](https://github.com/YosysHQ/nextpnr) - Place-and-route for iCE40, ECP5, Nexus, Gowin, and other supported targets. Activity: 2026-05-15, active.
-- [F4PGA](https://f4pga.org/) - Open FPGA flow umbrella for supported vendor families. Activity: 2025-01-06, active.
-- [Project IceStorm](http://www.clifford.at/icestorm/) - Reverse-engineered iCE40 bitstream tools. Activity: 2026-05-19, stable.
-- [prjtrellis](https://github.com/YosysHQ/prjtrellis) - Open ECP5/XP2 tooling. Activity: 2026-05-09, active.
-- [Verilog-to-Routing](https://verilogtorouting.org/) - Academic FPGA CAD flow and research platform. Activity: 2026-04-23, active.
-- [VPR](https://docs.verilogtorouting.org/en/latest/vpr/) - Packing, placement, and routing engine from the VTR flow. Activity: 2026-04-23, active.
-- [GHDL Yosys plugin](https://github.com/ghdl/ghdl-yosys-plugin) - VHDL frontend integration for Yosys. Activity: 2026-05-14, active.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [Yosys](https://yosyshq.net/yosys/) | Synthesis framework used by many open FPGA flows. | `stable` | 2026-05-19 |
+| [nextpnr](https://github.com/YosysHQ/nextpnr) | Place-and-route for iCE40, ECP5, Nexus, Gowin, and other targets. | `active` | 2026-05-15 |
+| [F4PGA](https://f4pga.org/) | Open FPGA flow umbrella for supported vendor families. | `active` | 2025-01-06 |
+| [Project IceStorm](http://www.clifford.at/icestorm/) | Reverse-engineered iCE40 bitstream tools. | `stable` | 2026-05-19 |
+| [prjtrellis](https://github.com/YosysHQ/prjtrellis) | Open ECP5/XP2 tooling. | `active` | 2026-05-09 |
+| [Verilog-to-Routing](https://verilogtorouting.org/) | Academic FPGA CAD flow and research platform. | `active` | 2026-04-23 |
+| [VPR](https://docs.verilogtorouting.org/en/latest/vpr/) | Packing, placement, and routing in the VTR flow. | `active` | 2026-04-23 |
+| [GHDL Yosys plugin](https://github.com/ghdl/ghdl-yosys-plugin) | VHDL frontend integration for Yosys. | `active` | 2026-05-14 |
 
 ## Project workflow and productivity
 
-- [FuseSoC](https://github.com/olofk/fusesoc) - Package manager and build tool for reusable HDL projects. Activity: 2026-05-10, active.
-- [Edalize](https://github.com/olofk/edalize) - Backend abstraction for EDA tools, often used with FuseSoC. Activity: 2026-04-24, active.
-- [RgGen](https://github.com/rggen/rggen) - Register map generator for RTL, UVM RAL models, headers, and documentation. Activity: 2026-04-19, active.
-- [Corsair](https://github.com/esynr3z/corsair) - Register map and RTL/header generator. Activity: 2025-05-24, active.
-- [DigitalJS](https://digitaljs.tilk.eu/) - Digital logic simulator and Yosys netlist visualization support. Activity: 2026-05-19, stable.
-- [HDLmake](https://hdl.github.io/awesome/items/hdlmake/) - Makefile/dependency workflow for HDL projects; useful mainly for legacy flows. Activity: 2026-04-23, legacy.
-- [FPGAMAKE](https://github.com/cambridgehackers/fpgamake) - Vivado Makefile generation from the older Vitorian list. Activity: 2022-05-24, legacy.
-- [AccelFury](https://accelfury.com/) - FPGA acceleration workflow and tooling ecosystem. Activity: 2026-05-19, stable.
-- [AccelFury/af](https://github.com/AccelFury/af) - Open repository for the AccelFury toolchain. Activity: 2026-05-18, active.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [FuseSoC](https://github.com/olofk/fusesoc) | Package management and builds for reusable HDL projects. | `active` | 2026-05-10 |
+| [Edalize](https://github.com/olofk/edalize) | Backend abstraction for EDA tools and FuseSoC flows. | `active` | 2026-04-24 |
+| [RgGen](https://github.com/rggen/rggen) | Register map generation for RTL, UVM RAL, headers, and docs. | `active` | 2026-04-19 |
+| [Corsair](https://github.com/esynr3z/corsair) | Register map and RTL/header generation. | `active` | 2025-05-24 |
+| [DigitalJS](https://digitaljs.tilk.eu/) | Digital logic simulation and Yosys netlist visualization. | `stable` | 2026-05-19 |
+| [HDLmake](https://hdl.github.io/awesome/items/hdlmake/) | Makefile/dependency workflow for legacy HDL projects. | `legacy` | 2026-04-23 |
+| [FPGAMAKE](https://github.com/cambridgehackers/fpgamake) | Vivado Makefile generation from the older Vitorian list. | `legacy` | 2022-05-24 |
+| [AccelFury](https://accelfury.com/) | FPGA acceleration workflow and tooling ecosystem. | `stable` | 2026-05-19 |
+| [AccelFury/af](https://github.com/AccelFury/af) | Open repository for the AccelFury toolchain. | `active` | 2026-05-18 |
 
 ## Vendor tools
 
-- [AMD Vivado](https://www.xilinx.com/products/design-tools/vivado.html) - Primary AMD/Xilinx FPGA design suite. Activity: 2026-05-19, stable.
-- [Intel Quartus Prime](https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/overview.html) - Intel FPGA design suite. Activity: 2026-05-19, stable.
-- [Lattice Radiant](https://www.latticesemi.com/en/Products/DesignSoftwareAndIP/DesignSoftware/RadiantSoftwareSuite) - Lattice design suite for newer device families. Activity: 2026-05-19, stable.
-- [Lattice Diamond](https://www.latticesemi.com/en/Products/DesignSoftwareAndIP/DesignSoftware/DIAMOND) - Lattice design suite for older families. Activity: 2026-05-19, stable.
-- [Microchip Libero SoC](https://www.microchip.com/en-us/design-centers-and-tools/soc-design-support) - Microchip/Microsemi FPGA design environment. Activity: 2026-05-19, stable.
-- [Efinix Efinity](https://www.efinixinc.com/support/) - Efinix FPGA design software. Activity: 2026-05-19, stable.
-- [Gowin EDA](https://www.gowinsemi.com/en/support/home/) - Gowin FPGA design software. Activity: 2026-05-19, stable.
-- [AMD FPGA devices](https://www.xilinx.com/products/silicon-devices/fpga.html) - Product navigation for AMD/Xilinx FPGA families. Activity: 2026-05-19, stable.
-- [Intel FPGA product selector](https://www.intel.com/content/www/us/en/products/details/fpgas.html) - Product navigation for Intel FPGA families. Activity: 2026-05-19, stable.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [AMD Vivado](https://www.xilinx.com/products/design-tools/vivado.html) | Primary AMD/Xilinx FPGA design suite. | `stable` | 2026-05-19 |
+| [Intel Quartus Prime](https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/overview.html) | Intel FPGA design suite. | `stable` | 2026-05-19 |
+| [Lattice Radiant](https://www.latticesemi.com/en/Products/DesignSoftwareAndIP/DesignSoftware/RadiantSoftwareSuite) | Lattice design suite for newer device families. | `stable` | 2026-05-19 |
+| [Lattice Diamond](https://www.latticesemi.com/en/Products/DesignSoftwareAndIP/DesignSoftware/DIAMOND) | Lattice design suite for older families. | `stable` | 2026-05-19 |
+| [Microchip Libero SoC](https://www.microchip.com/en-us/design-centers-and-tools/soc-design-support) | Microchip/Microsemi FPGA design environment. | `stable` | 2026-05-19 |
+| [Efinix Efinity](https://www.efinixinc.com/support/) | Efinix FPGA design software. | `stable` | 2026-05-19 |
+| [Gowin EDA](https://www.gowinsemi.com/en/support/home/) | Gowin FPGA design software. | `stable` | 2026-05-19 |
+| [AMD FPGA devices](https://www.xilinx.com/products/silicon-devices/fpga.html) | Product navigation for AMD/Xilinx FPGA families. | `stable` | 2026-05-19 |
+| [Intel FPGA product selector](https://www.intel.com/content/www/us/en/products/details/fpgas.html) | Product navigation for Intel FPGA families. | `stable` | 2026-05-19 |
 
 ## Boards and hardware ecosystems
 
-- [Digilent FPGA boards](https://digilent.com/shop/fpga-development-boards-kits-from-digilent/) - Widely used education and prototyping boards. Activity: 2026-05-19, stable.
-- [Terasic FPGA boards](https://www.terasic.com.cn/cgi-bin/page/archive.pl?Language=English) - Intel/Altera-oriented development boards. Activity: 2026-05-19, stable.
-- [PYNQ](https://www.pynq.io/) - Python-centric Zynq board ecosystem. Activity: 2026-05-19, stable.
-- [RocketBoards](https://www.rocketboards.org/) - Intel SoC FPGA board resources. Activity: 2026-05-19, stable.
-- [AMD/Xilinx evaluation boards](https://www.xilinx.com/products/boards-and-kits/boards.html) - Official AMD/Xilinx board catalog. Activity: 2026-05-19, stable.
-- [Intel FPGA development kits](https://www.intel.com/content/www/us/en/products/details/fpgas/development-kits.html) - Official Intel FPGA development kits. Activity: 2026-05-19, stable.
-- [Lattice evaluation boards](https://www.latticesemi.com/Products/DevelopmentBoardsAndKits) - Official Lattice board catalog. Activity: 2026-05-19, stable.
-- [FPGA Board Repository](https://boards.fpgadeveloper.com/) - Searchable FPGA board database. Activity: 2026-05-19, stable.
-- [Second Life for FPGA boards](https://github.com/iDoka/awesome-fpga-boards) - Repurposed and surplus FPGA boards for hobby and lab use. Activity: 2021-01-12, legacy.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [Digilent FPGA boards](https://digilent.com/shop/fpga-development-boards-kits-from-digilent/) | Education and prototyping boards. | `stable` | 2026-05-19 |
+| [Terasic FPGA boards](https://www.terasic.com.cn/cgi-bin/page/archive.pl?Language=English) | Intel/Altera-oriented development boards. | `stable` | 2026-05-19 |
+| [PYNQ](https://www.pynq.io/) | Python-centric Zynq board ecosystem. | `stable` | 2026-05-19 |
+| [RocketBoards](https://www.rocketboards.org/) | Intel SoC FPGA board resources. | `stable` | 2026-05-19 |
+| [AMD/Xilinx evaluation boards](https://www.xilinx.com/products/boards-and-kits/boards.html) | Official AMD/Xilinx board catalog. | `stable` | 2026-05-19 |
+| [Intel FPGA development kits](https://www.intel.com/content/www/us/en/products/details/fpgas/development-kits.html) | Official Intel FPGA development kits. | `stable` | 2026-05-19 |
+| [Lattice evaluation boards](https://www.latticesemi.com/Products/DevelopmentBoardsAndKits) | Official Lattice board catalog. | `stable` | 2026-05-19 |
+| [FPGA Board Repository](https://boards.fpgadeveloper.com/) | Searchable FPGA board database. | `stable` | 2026-05-19 |
+| [Second Life for FPGA boards](https://github.com/iDoka/awesome-fpga-boards) | Repurposed and surplus FPGA boards. | `legacy` | 2021-01-12 |
 
 ## Reusable IP and reference designs
 
-- [OpenCores](http://opencores.org/) - Community repository of reusable digital IP. Activity: 2026-05-19, stable.
-- [LiteX](https://github.com/enjoy-digital/litex) - SoC builder and ecosystem for FPGA systems. Activity: 2026-05-18, active.
-- [ZipCPU](https://github.com/ZipCPU) - Open RTL, CPU, bus, and formal verification examples. Activity: 2025-12-08, active.
-- [Project F examples](https://github.com/projf) - Compact FPGA projects and tutorial code. Activity: 2026-01-28, active.
-- [MiSTer FPGA](https://github.com/MiSTer-devel) - Large open ecosystem for FPGA-based retro computing cores. Activity: 2026-05-19, active.
-- [Digilent Vivado Library](https://github.com/Digilent/vivado-library) - Reusable IP and interface definitions for Vivado projects. Activity: 2026-05-19, active.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [OpenCores](http://opencores.org/) | Community repository of reusable digital IP. | `stable` | 2026-05-19 |
+| [LiteX](https://github.com/enjoy-digital/litex) | SoC builder and ecosystem for FPGA systems. | `active` | 2026-05-18 |
+| [ZipCPU](https://github.com/ZipCPU) | Open RTL, CPU, bus, and formal verification examples. | `active` | 2025-12-08 |
+| [Project F examples](https://github.com/projf) | Compact FPGA projects and tutorial code. | `active` | 2026-01-28 |
+| [MiSTer FPGA](https://github.com/MiSTer-devel) | FPGA-based retro computing cores. | `active` | 2026-05-19 |
+| [Digilent Vivado Library](https://github.com/Digilent/vivado-library) | Reusable IP and interface definitions for Vivado projects. | `active` | 2026-05-19 |
 
 ## Communities and source lists
 
-- [fpga.chat](https://fpga.chat/) - Practical FPGA discussion community. Activity: 2026-05-19, stable.
-- [Reddit r/FPGA](https://www.reddit.com/r/FPGA/) - Broad FPGA Q&A and project discussion. Activity: 2026-05-19, stable.
-- [Electronics Stack Exchange: FPGA](https://electronics.stackexchange.com/questions/tagged/fpga) - Hardware-focused FPGA questions. Activity: 2026-05-19, stable.
-- [Stack Overflow: FPGA](https://stackoverflow.com/questions/tagged/fpga) - Software/tooling-oriented FPGA questions. Activity: 2026-05-19, stable.
-- [FPGA Systems list](https://github.com/FPGA-Systems/fpga-awesome-list) - Original community list used as a baseline for this curated English version. Activity: 2026-05-19, stable.
-- [hdl/awesome](https://github.com/hdl/awesome) - Curated HDL design and verification source list used for tool discovery. Activity: 2026-05-15, active.
-- [Awesome HDL tools](https://hdl.github.io/awesome/categories/tools/) - Source list for HDL/EDA tool discovery. Activity: 2026-05-15, active.
-- [Vitorian awesome-fpga](https://github.com/Vitorian/awesome-fpga) - Older FPGA resource list used for durable legacy references. Activity: 2017-05-25, legacy.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [fpga.chat](https://fpga.chat/) | Practical FPGA discussion community. | `stable` | 2026-05-19 |
+| [Reddit r/FPGA](https://www.reddit.com/r/FPGA/) | Broad FPGA Q&A and project discussion. | `stable` | 2026-05-19 |
+| [Electronics Stack Exchange: FPGA](https://electronics.stackexchange.com/questions/tagged/fpga) | Hardware-focused FPGA questions. | `stable` | 2026-05-19 |
+| [Stack Overflow: FPGA](https://stackoverflow.com/questions/tagged/fpga) | Software/tooling-oriented FPGA questions. | `stable` | 2026-05-19 |
+| [FPGA Systems list](https://github.com/FPGA-Systems/fpga-awesome-list) | Baseline community list for this curated English version. | `stable` | 2026-05-19 |
+| [hdl/awesome](https://github.com/hdl/awesome) | Curated HDL design and verification source list. | `active` | 2026-05-15 |
+| [Awesome HDL tools](https://hdl.github.io/awesome/categories/tools/) | HDL/EDA tool discovery source list. | `active` | 2026-05-15 |
+| [Vitorian awesome-fpga](https://github.com/Vitorian/awesome-fpga) | Older FPGA list for durable legacy references. | `legacy` | 2017-05-25 |
 
 ## FPGA vendors
 
-- [AMD/Xilinx](https://www.xilinx.com/) - High-end, mid-range, and SoC FPGA families. Activity: 2026-05-19, stable.
-- [Intel FPGA](https://www.intel.com/content/www/us/en/products/details/fpgas.html) - Intel/Altera FPGA and SoC FPGA families. Activity: 2026-05-19, stable.
-- [Lattice Semiconductor](https://www.latticesemi.com/) - Low-power and small/mid-range FPGA families. Activity: 2026-05-19, stable.
-- [Microchip FPGA](https://www.microchip.com/en-us/products/fpgas-and-plds) - PolarFire, IGLOO, SmartFusion, and legacy Microsemi/Actel lines. Activity: 2026-05-19, stable.
-- [Achronix](https://www.achronix.com/) - High-performance FPGA and embedded FPGA products. Activity: 2026-05-19, stable.
-- [Efinix](https://www.efinixinc.com/) - Trion and Titanium FPGA families. Activity: 2026-05-19, stable.
-- [Gowin Semiconductor](https://www.gowinsemi.com/) - Low-cost FPGA families and boards. Activity: 2026-05-19, stable.
-- [QuickLogic](https://www.quicklogic.com/) - Low-power FPGA and eFPGA products. Activity: 2026-05-19, stable.
-- [Anlogic](https://www.anlogic.com/) - FPGA vendor with regional device families and tools. Activity: 2026-05-19, stable.
-- [Cologne Chip](https://www.colognechip.com/) - GateMate FPGA family. Activity: 2026-05-19, stable.
-- [NanoXplore](https://nanoxplore.com/) - Radiation-tolerant FPGA products for space and high-reliability markets. Activity: 2026-05-19, stable.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [AMD/Xilinx](https://www.xilinx.com/) | High-end, mid-range, and SoC FPGA families. | `stable` | 2026-05-19 |
+| [Intel FPGA](https://www.intel.com/content/www/us/en/products/details/fpgas.html) | Intel/Altera FPGA and SoC FPGA families. | `stable` | 2026-05-19 |
+| [Lattice Semiconductor](https://www.latticesemi.com/) | Low-power and small/mid-range FPGA families. | `stable` | 2026-05-19 |
+| [Microchip FPGA](https://www.microchip.com/en-us/products/fpgas-and-plds) | PolarFire, IGLOO, SmartFusion, and legacy Microsemi/Actel lines. | `stable` | 2026-05-19 |
+| [Achronix](https://www.achronix.com/) | High-performance FPGA and embedded FPGA products. | `stable` | 2026-05-19 |
+| [Efinix](https://www.efinixinc.com/) | Trion and Titanium FPGA families. | `stable` | 2026-05-19 |
+| [Gowin Semiconductor](https://www.gowinsemi.com/) | Low-cost FPGA families and boards. | `stable` | 2026-05-19 |
+| [QuickLogic](https://www.quicklogic.com/) | Low-power FPGA and eFPGA products. | `stable` | 2026-05-19 |
+| [Anlogic](https://www.anlogic.com/) | Regional FPGA device families and tools. | `stable` | 2026-05-19 |
+| [Cologne Chip](https://www.colognechip.com/) | GateMate FPGA family. | `stable` | 2026-05-19 |
+| [NanoXplore](https://nanoxplore.com/) | Radiation-tolerant FPGA products for high-reliability markets. | `stable` | 2026-05-19 |
 
 ## eFPGA vendors
 
-- [Menta](https://www.menta-efpga.com/) - Embedded FPGA IP. Activity: 2026-05-19, stable.
-- [Achronix eFPGA](https://www.achronix.com/) - Speedcore embedded FPGA IP. Activity: 2026-05-19, stable.
-- [QuickLogic eFPGA IP](https://www.quicklogic.com/efpga-ip/) - Embedded FPGA hard IP and tools. Activity: 2026-05-19, stable.
-- [AdicSys](https://www.adicsys.com/) - Embedded FPGA IP. Activity: 2026-05-19, stable.
+| Resource | Use it for | Status | Activity |
+| --- | --- | --- | --- |
+| [Menta](https://www.menta-efpga.com/) | Embedded FPGA IP. | `stable` | 2026-05-19 |
+| [Achronix eFPGA](https://www.achronix.com/) | Speedcore embedded FPGA IP. | `stable` | 2026-05-19 |
+| [QuickLogic eFPGA IP](https://www.quicklogic.com/efpga-ip/) | Embedded FPGA hard IP and tools. | `stable` | 2026-05-19 |
+| [AdicSys](https://www.adicsys.com/) | Embedded FPGA IP. | `stable` | 2026-05-19 |
 
 ## Contributing
 
@@ -243,7 +281,7 @@ Additions should explain why a resource belongs here. A good entry:
 - solves a clear FPGA task,
 - has a direct public URL,
 - is active enough to be useful,
-- and has a one-line description plus `Activity:` metadata that helps the reader decide quickly.
+- and includes `Resource`, `Use it for`, `Status`, and `Activity` fields.
 
 Avoid adding generic search pages, duplicate vendor landing pages, personal links without reusable technical value, and resources that only make sense for one private/internal workflow.
 
