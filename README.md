@@ -22,6 +22,7 @@ This list is optimized for application value: learning, RTL design, verification
 - [Communities and source lists](#communities-and-source-lists)
 - [FPGA vendors](#fpga-vendors)
 - [eFPGA vendors](#efpga-vendors)
+- [Jobs](#jobs)
 - [Source audit](#source-audit)
 - [Contributing](#contributing)
 - [License](#license)
@@ -37,6 +38,7 @@ This list is optimized for application value: learning, RTL design, verification
 | Manage project workflow | FuseSoC, Edalize, RgGen, SiliconCompiler, Apio, FPGA Error Decoder |
 | Pick reusable building blocks | LiteX, Analog Devices HDL, NEORV32, VexRiscv, SERV, ZipCPU |
 | Choose a board or vendor | Board catalogs first, then vendor tools and device pages |
+| Find FPGA work | [EmbeddedJobs](https://embedded.jobs/fpga-jobs) FPGA job board |
 
 ## Activity and status
 
@@ -303,6 +305,12 @@ This list is optimized for application value: learning, RTL design, verification
 | [AdicSys](https://www.adicsys.com/) | Embedded FPGA IP. | ![stable][status-stable] |  |  |
 | [Menta](https://www.menta-efpga.com/) | Embedded FPGA IP. | ![stable][status-stable] |  |  |
 | [QuickLogic eFPGA IP](https://www.quicklogic.com/efpga-ip/) | Embedded FPGA hard IP and tools. | ![stable][status-stable] |  |  |
+
+## Jobs
+
+| Resource | Use it for | Status | Activity | Stars |
+| --- | --- | --- | --- | --- |
+| [EmbeddedJobs FPGA Jobs](https://embedded.jobs/fpga-jobs) | Curated FPGA job board aggregating listings from 100+ sources; covers all experience levels, major hiring regions, and salary data. | ![active][status-active] | | |
 
 ## Source audit
 
